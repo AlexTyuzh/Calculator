@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #b1bff0;
+}
+
+.container {
+  text-align: center;
+  max-width: 320px;
+  width: 50%;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 15px;
+  background-color: #2f3640;
+  box-shadow: 0px 7px 0px #212a35;
+}
+
+h1 {
+  color: #ffffff;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.display {
+  background-color: #1e272e;
+  color: white;
+  border-radius: 10px;
+  padding: 15px;
+  font-size: 20px;
+  margin-bottom: 15px;
+  box-shadow: inset 0px -2px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+.result {
+  text-align: end;
+  font-size: 18px;
+  color: #f5f6fa;
+  margin-bottom: 10px;
+}
+
+input {
+  margin-bottom: 5px;
+  text-align: end;
+  font-size: 26px;
+  width: 100%;
+  border: none;
+  background-color: #1e272e;
+  color: #f5f6fa;
+  outline: none;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  width: 100%;
+}
+
+button {
+  font-size: 22px;
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid gray;
+  background: whitesmoke;
+  box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, 0.5);
+  transition: background 0.3s ease, transform 0.1s ease;
+}
+
+button:hover {
+  background: #ddd;
+  cursor: pointer;
+}
+
+button:active {
+  transform: scale(0.95); /* Slight click effect */
+}
+
+.btn-equals {
+  background: tomato;
+  color: white;
+  grid-column: span 2;
+  border: 1px solid rgb(185, 75, 55);
+}
+
+.btn-equals:hover {
+  background: rgb(206, 94, 74);
+}
+
+.btn-top {
+  color: #ffc400;
+}
+
+button:nth-child(4),
+button:nth-child(8),
+button:nth-child(12),
+button:nth-child(16) {
+  background-color: #ffc400; /* Gold color for operators */
+  border: 1px solid #ca9f13;
+}
+
+button:nth-child(4):hover,
+button:nth-child(8):hover,
+button:nth-child(12):hover,
+button:nth-child(16):hover {
+  background-color: #d89f03;
+}
