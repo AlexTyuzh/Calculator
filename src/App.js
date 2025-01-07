@@ -104,7 +104,7 @@ function App() {
             AC
           </button>
           <button className="btn-top" onClick={deleteLast}>
-            {"\u21E4"}
+            {"\u232B"}
           </button>
           <button type="button" onClick={() => handleInput("/")}>
             {"\u00F7"}
